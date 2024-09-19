@@ -1,0 +1,115 @@
+-- CREATE TABLE book (
+-- 	id SERIAL PRIMARY KEY,
+-- 	title VARCHAR(100) NOT NULL,
+-- 	page_number INTEGER NOT NULL,
+-- 	author_id INTEGER REFERENCES author(id)
+-- );
+-- SELECT * FROM book
+
+-- insert into book (title, page_number, author_id) values ('Last Unicorn, The', 35, 1);
+-- insert into book (title, page_number, author_id) values ('Through the Olive Trees (Zire darakhatan zeyton)', 71, 2);
+-- insert into book (title, page_number, author_id) values ('Boys Town', 10, 3);
+-- insert into book (title, page_number, author_id) values ('Night of the Following Day, The', 62, 4);
+-- insert into book (title, page_number, author_id) values ('Legend of Leigh Bowery, The', 94, 5);
+-- insert into book (title, page_number, author_id) values ('Soviet Story, The', 94, 7);
+-- insert into book (title, page_number, author_id) values ('Temptation of a Monk (You Seng)', 39, 8);
+-- insert into book (title, page_number, author_id) values ('Empty Nest (El nido vacío)', 11, 9);
+-- insert into book (title, page_number, author_id) values ('Leo''s Room (Cuarto de Leo, El)', 56, 10);
+-- insert into book (title, page_number, author_id) values ('Ghost', 77, 11);
+-- insert into book (title, page_number, author_id) values ('Italian Straw Hat, The (Un chapeau de paille d''Italie)', 58, 12);
+-- insert into book (title, page_number, author_id) values ('Amen.', 4, 13);
+-- insert into book (title, page_number, author_id) values ('Killjoy 2: Deliverance from Evil', 93, 14);
+-- insert into book (title, page_number, author_id) values ('Hannah Takes the Stairs', 29, 15);
+-- insert into book (title, page_number, author_id) values ('Zombeavers', 42, 16);
+-- insert into book (title, page_number, author_id) values ('Deathstalker', 19, 17);
+-- insert into book (title, page_number, author_id) values ('Citizen, The', 47, 18);
+-- insert into book (title, page_number, author_id) values ('Prince and the Pauper, The', 21, 19);
+-- insert into book (title, page_number, author_id) values ('Under the Stars (Bajo las estrellas)', 42, 20);
+-- insert into book (title, page_number, author_id) values ('Sum of Us, The', 81, 21);
+-- insert into book (title, page_number, author_id) values ('Night of the Generals, The', 60, 22);
+-- insert into book (title, page_number, author_id) values ('Beloved', 76, 23);
+-- insert into book (title, page_number, author_id) values ('Blood: The Last Vampire', 62, 24);
+-- insert into book (title, page_number, author_id) values ('Far from Heaven', 97, 25);
+-- insert into book (title, page_number, author_id) values ('Voyage of the Damned', 12, 26);
+-- insert into book (title, page_number, author_id) values ('Caged', 81, 27);
+-- insert into book (title, page_number, author_id) values ('Pirates! Band of Misfits, The', 37, 28);
+-- insert into book (title, page_number, author_id) values ('Shiri (Swiri)', 82, 29);
+-- insert into book (title, page_number, author_id) values ('Three Faces of Eve, The', 32, 30);
+-- insert into book (title, page_number, author_id) values ('Trip to Mars, A', 100, 31);
+-- insert into book (title, page_number, author_id) values ('Lawless Frontier, The', 24, 32);
+-- insert into book (title, page_number, author_id) values ('School for Scoundrels', 10, 33);
+-- insert into book (title, page_number, author_id) values ('Asterix vs. Caesar (Astérix et la surprise de César)', 29, 34);
+-- insert into book (title, page_number, author_id) values ('Imaginaerum', 78, 35);
+-- insert into book (title, page_number, author_id) values ('Unfaithfully Yours', 18, 36);
+-- insert into book (title, page_number, author_id) values ('One Crazy Summer', 13, 37);
+-- insert into book (title, page_number, author_id) values ('V', 49, 38);
+-- insert into book (title, page_number, author_id) values ('I Am Fishead', 3, 39);
+-- insert into book (title, page_number, author_id) values ('Kings of Pastry (Les rois de la pâtisserie)', 93, 40);
+-- insert into book (title, page_number, author_id) values ('How to Deal', 46, 41);
+-- insert into book (title, page_number, author_id) values ('Frozen Days', 48, 42);
+-- insert into book (title, page_number, author_id) values ('Dutch', 20, 43);
+-- insert into book (title, page_number, author_id) values ('Suspect Zero', 70, 44);
+-- insert into book (title, page_number, author_id) values ('Littlest Rebel, The', 50, 45);
+-- insert into book (title, page_number, author_id) values ('Liberty Kid', 19, 46);
+-- insert into book (title, page_number, author_id) values ('Under the Cherry Moon', 84, 47);
+-- insert into book (title, page_number, author_id) values ('It''s Pat', 74, 48);
+-- insert into book (title, page_number, author_id) values ('History of the World: Part I', 29, 49);
+-- insert into book (title, page_number, author_id) values ('Wondrous Oblivion', 87, 50);
+-- insert into book (title, page_number, author_id) values ('Judgment Night', 39, 51);
+-- insert into book (title, page_number, author_id) values ('Off Limits', 85, 52);
+-- insert into book (title, page_number, author_id) values ('Desire: The Vampire', 80, 53);
+-- insert into book (title, page_number, author_id) values ('Tin Man', 9, 54);
+-- insert into book (title, page_number, author_id) values ('Pretty/Handsome', 3, 55);
+-- insert into book (title, page_number, author_id) values ('On Golden Pond', 74, 56);
+-- insert into book (title, page_number, author_id) values ('Dallas Buyers Club', 65, 57);
+-- insert into book (title, page_number, author_id) values ('The Magic Flute', 29, 58);
+-- insert into book (title, page_number, author_id) values ('Guess Who', 59, 59);
+-- insert into book (title, page_number, author_id) values ('Lady Oscar', 33, 60);
+-- insert into book (title, page_number, author_id) values ('James Dean Remembered', 39, 61);
+-- insert into book (title, page_number, author_id) values ('CrissCross', 71, 62);
+-- insert into book (title, page_number, author_id) values ('Fighting Elegy (Kenka erejii)', 80, 63);
+-- insert into book (title, page_number, author_id) values ('Grand Prix', 50, 64);
+-- insert into book (title, page_number, author_id) values ('Crucified Lovers, The (Chikamatsu monogatari)', 59, 65);
+-- insert into book (title, page_number, author_id) values ('Sagebrush Trail', 92, 66);
+-- insert into book (title, page_number, author_id) values ('Jerusalem', 85, 67);
+-- insert into book (title, page_number, author_id) values ('Last Samurai, The', 37, 68);
+-- insert into book (title, page_number, author_id) values ('Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb', 90, 69);
+-- insert into book (title, page_number, author_id) values ('2-Headed Shark Attack', 23, 70);
+-- insert into book (title, page_number, author_id) values ('Don''t Move (Non ti muovere)', 61, 71);
+-- insert into book (title, page_number, author_id) values ('Vengeance: The Story of Tony Cimo', 68, 72);
+-- insert into book (title, page_number, author_id) values ('Crossing, The', 18, 73);
+-- insert into book (title, page_number, author_id) values ('Känd från TV', 80, 74);
+-- insert into book (title, page_number, author_id) values ('Toy Story Toons: Hawaiian Vacation', 71, 75);
+-- insert into book (title, page_number, author_id) values ('Break-Up, The', 16, 76);
+-- insert into book (title, page_number, author_id) values ('Dirty Dingus Magee', 95, 77);
+-- insert into book (title, page_number, author_id) values ('I Capture the Castle', 78, 78);
+-- insert into book (title, page_number, author_id) values ('Dead End', 42, 79);
+-- insert into book (title, page_number, author_id) values ('Day, The', 65, 80);
+-- insert into book (title, page_number, author_id) values ('Cabinet of Caligari, The', 34, 81);
+-- insert into book (title, page_number, author_id) values ('Hill, The', 39, 82);
+-- insert into book (title, page_number, author_id) values ('Woman Next Door, The (Femme d''à côté, La)', 71, 83);
+-- insert into book (title, page_number, author_id) values ('Naughty Room, The', 84, 84);
+-- insert into book (title, page_number, author_id) values ('Charlie Chan in Egypt', 85, 85);
+-- insert into book (title, page_number, author_id) values ('Jo Jo Dancer, Your Life is Calling', 56, 86);
+-- insert into book (title, page_number, author_id) values ('Werewolf, The', 31, 87);
+-- insert into book (title, page_number, author_id) values ('Texas Chainsaw Massacre, The', 44, 88);
+-- insert into book (title, page_number, author_id) values ('Net Worth', 17, 89);
+-- insert into book (title, page_number, author_id) values ('Jodhaa Akbar', 4, 90);
+-- insert into book (title, page_number, author_id) values ('Rage, The', 78, 91);
+-- insert into book (title, page_number, author_id) values ('Daughter of the Nile (Ni luo he nu er)', 22, 92);
+-- insert into book (title, page_number, author_id) values ('Your Sister''s Sister', 77, 93);
+-- insert into book (title, page_number, author_id) values ('Beach Party', 34, 94);
+-- insert into book (title, page_number, author_id) values ('The Garden of Sinners - Chapter 5: Paradox Paradigm', 29, 95);
+-- insert into book (title, page_number, author_id) values ('Men with Guns', 43, 96);
+-- insert into book (title, page_number, author_id) values ('Johnny Belinda', 5, 97);
+-- insert into book (title, page_number, author_id) values ('Adore', 19, 98);
+-- insert into book (title, page_number, author_id) values ('Gun Crazy (a.k.a. Deadly Is the Female)', 6, 99);
+-- insert into book (title, page_number, author_id) values ('Girlfriend Experience, The', 16, 100);
+
+-- SELECT * FROM book
+
+-- SELECT * FROM book -- BİR YAZARIN BİRDEN FAZLA KİTABI OLABİLİR
+-- WHERE author_id = 1;
+
+-- SELECT * FROM book -- TABLO BİRLEŞTİRME
+-- JOIN author ON author.id = book.author_id;

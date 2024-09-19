@@ -1,0 +1,7 @@
+-- SELECT * FROM film;
+-- SELECT MAX(replacement_cost) FROM film;
+-- SELECT ROUND(AVG(length),3) FROM film;
+-- SELECT SUM(rental_rate) FROM film;
+-- SELECT MAX(length) , MIN(length) , SUM(replacement_cost), ROUND(AVG(rental_rate),4) FROM film;
+-- SELECT MAX(length) FROM film
+-- WHERE rental_rate = 4.99;
